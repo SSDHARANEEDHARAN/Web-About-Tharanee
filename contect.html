@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section-one">
+            <p class="section-one__nam">🤍I’d Love to Hear from You!
+                Thank you for visiting my portfolio! Whether you’re interested in collaborating,
+                have questions about my work, or just want to say hello, I’m here to connect🤍
+            <p>
+            <P class="section-one__role">🤍Please fill out the form below, and I’ll respond as soon as possible🤍</P>
+            <a class="section-one__contact" href="index.html">HOME</a>
+        </div>
+
+        <form id="contactForm" class="contactForm">
+            <center>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" placeholder="Enter your Name" class="contect-form__one" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" placeholder="Enter your Email" class="contect-form__two" required></td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td>
+                            <textarea placeholder="Message......." rows="4" class="contect-form__three"
+                                required></textarea>
+                        </td>
+                    </tr>
+            </center>
+            <div>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="contect-form__four">SUBMIT </button></td>
+                </tr>
+                </table>
+
+        </form>
+
+        <div class="success-message" id="successMessage" style="display: none;">
+            Successfully Submitted!Thanks for contacting us! We're here to help!
+        </div>
+
+        <div class="section-five">
+            <p class="section-five__title">
+                <a class="section-one__cont" href="https://x.com/i/flow/login">TWITTER LINK</a>
+                <a class="section-one__cont" href="https://github.com/dashboard">GITHUB LINK</a>
+                <a class="section-one__cont" href="https://www.linkedin.com/login">LINKDIN LINK</a>
+            </p><br>
+            <p class="section-five__des">
+                🤍I’m currently available for freelance projects and collaborations. Let’s
+                create something amazing together!
+                Thank you for taking the time to reach out. I look forward to connecting with you!🤍</P><br>
+            <P >&copy;TharaneeTharan S.S</p>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
